@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "dependencies": {
