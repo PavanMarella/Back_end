@@ -1,0 +1,108 @@
+:root{
+    --main-radius: 5px;
+    --main-padding: 5px;
+    --yellow: #f7c600;
+}
+
+.container{
+    font-weight: 800;
+    font-size: 1em;
+    color: black;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.3fr 1.1fr 1.1fr 1.1fr 1.1fr 0.8fr;
+    grid-template-areas:
+    "nav nav"
+    "main main1"
+    "education education"
+    "proj proj"
+    "exp exp"
+    "bl bl"
+    "footer footer";
+    gap:0.5em;
+}
+
+h3{
+    text-align: center;
+}
+
+#a{
+    line-height: 0.2px;
+}
+
+nav{
+    grid-area: nav;
+    background:#edc4b3 ;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+main{
+    grid-area: main;
+    background-color: #e6b8a2;
+    padding: 5px;
+
+}
+#main1{
+    grid-area: main1;
+    background-color: #e6b8a2;
+    padding: 5px;
+
+}
+
+#education{
+    grid-area: education;
+    background: #deab90;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#proj{
+    grid-area: proj;
+    background: #d69f7e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp{
+    grid-area: exp;
+    background: #c38e70;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#bl{
+    grid-area: bl;
+    background: #9d6b53;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer{
+    grid-area: footer;
+    background: #deab90;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+.m-bg{
+    float: right;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.3fr 1.1fr 1.1fr 1.1fr 1.1fr 0.8fr;
+        grid-template-areas: "nav"
+        "main"
+        "main1"
+        "education"
+        "proj"
+        "exp"
+        "bl"
+        "footer";
+    }
+    
+    
+}
